@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04633DAA1C3BA4B3007DCA49 /* ColorRGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04633DA91C3BA4B3007DCA49 /* ColorRGBA.swift */; };
 		049338A31C3B78C500F795D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049338A21C3B78C500F795D7 /* AppDelegate.swift */; };
 		049338A51C3B78C500F795D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049338A41C3B78C500F795D7 /* Assets.xcassets */; };
 		049338A81C3B78C500F795D7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049338A61C3B78C500F795D7 /* MainMenu.xib */; };
+		049338B11C3B7A4A00F795D7 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049338AF1C3B7A4A00F795D7 /* MasterViewController.swift */; };
+		049338B21C3B7A4A00F795D7 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049338B01C3B7A4A00F795D7 /* MasterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04633DA91C3BA4B3007DCA49 /* ColorRGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRGBA.swift; sourceTree = "<group>"; };
 		0493389F1C3B78C500F795D7 /* rgba2hex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rgba2hex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049338A21C3B78C500F795D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		049338A41C3B78C500F795D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049338A71C3B78C500F795D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		049338A91C3B78C500F795D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		049338AF1C3B7A4A00F795D7 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		049338B01C3B7A4A00F795D7 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +56,31 @@
 		049338A11C3B78C500F795D7 /* rgba2hex */ = {
 			isa = PBXGroup;
 			children = (
-				049338A21C3B78C500F795D7 /* AppDelegate.swift */,
+				049338B41C3B7D5800F795D7 /* Model */,
+				049338B31C3B7D3600F795D7 /* GUI */,
 				049338A41C3B78C500F795D7 /* Assets.xcassets */,
-				049338A61C3B78C500F795D7 /* MainMenu.xib */,
 				049338A91C3B78C500F795D7 /* Info.plist */,
 			);
 			path = rgba2hex;
+			sourceTree = "<group>";
+		};
+		049338B31C3B7D3600F795D7 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				049338A61C3B78C500F795D7 /* MainMenu.xib */,
+				049338A21C3B78C500F795D7 /* AppDelegate.swift */,
+				049338AF1C3B7A4A00F795D7 /* MasterViewController.swift */,
+				049338B01C3B7A4A00F795D7 /* MasterViewController.xib */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		049338B41C3B7D5800F795D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04633DA91C3BA4B3007DCA49 /* ColorRGBA.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +143,7 @@
 			files = (
 				049338A51C3B78C500F795D7 /* Assets.xcassets in Resources */,
 				049338A81C3B78C500F795D7 /* MainMenu.xib in Resources */,
+				049338B21C3B7A4A00F795D7 /* MasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04633DAA1C3BA4B3007DCA49 /* ColorRGBA.swift in Sources */,
+				049338B11C3B7A4A00F795D7 /* MasterViewController.swift in Sources */,
 				049338A31C3B78C500F795D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +250,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -269,6 +298,7 @@
 				049338AE1C3B78C500F795D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
